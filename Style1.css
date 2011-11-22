@@ -1,0 +1,43 @@
+p
+{
+    font-size: 14px; /* Paragraphes de 14 pixels */
+   
+}
+
+h1
+{ 
+    
+    font-size: 40px; /* Titres de 40 pixels */
+    font-weight: bold;
+    color: gray;
+    text-decoration :underline;
+}
+
+h2
+{
+    text-decoration :underline;
+    font-style: italic;
+color:gray;
+}
+
+
+
+body {
+ 
+    padding-top:250px;
+    color:white;
+    text-align: center;
+    font-family: Georgia, Arial, serif;
+    background-image: url("teal-background.jpg");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat;  /* Le fond ne sera pas répété */
+    list-style-position:inside;
+
+}
+
+ul
+{
+     list-style-image : url(puce_fleur.gif);
+}
+
+
