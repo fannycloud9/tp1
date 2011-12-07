@@ -1,33 +1,135 @@
  <html>
 <link href="Style1.css" rel="stylesheet" type="text/css" title="Default">
-<link href="Style2.css" rel="alternate stylesheet" type="text/css" title="Option">  
-  <head>    	</head>
+<link href="Style2.css" rel="alternate stylesheet" type="text/css" title="Option"> 
 
-    <h1>Premi&egravere Partie</h1>
-         <body>
+  <head>   
+
+<IMG src="php.gif "  
+<img src="php.gif" name="titre" onmouseover="titre.src='php1.gif'" onmouseout="titre.src='php.gif'" /> 
         <meta charset="utf-8" />
         <title>TP1.1</title>
-  
-		<p>Un paragraphe dans cette partie avec <b> quelque chose d'important.</b> </p>
-		<p>Un deuxi&egraveme paragraphe dans cette premi&egravere partie. </p>
-	
-	<h1>Deuxi&egraveme Partie</h1>
-		<p>Un paragraphe qui introduit une liste num&eacuterot&eacutee :  
-			<ol>
-			<li>Un &eacutel&eacutement</li>
-			<li>Un autre d&eacuteclin&eacute</li>
-				<ul>
-				<li>Version1</li>
-				<li>Vesrion2</li>
-				</ul>
-			<li>Un dernier</li>
-			</ol>
-		</p>
-	<h2>Une sous Partie</h2>	
-	Du texte dans cette sous partie.
-	
+      <script type="text/javascript">
 
-   
+function afficher_cacher(id)
+{
+        if(document.getElementById(id).style.visibility=="hidden")
+        {
+                document.getElementById(id).style.visibility="visible";
+               document.getElementById("som").style.height = "325px";      
+        }
+        else
+        {
+                document.getElementById(id).style.visibility="hidden";
+                 document.getElementById("som").style.height = "100px";
+        }
+        return true;
+}
+
+</script>
+ </head>
+     
+        <body>
+        
+        
+     
+<p>PHP (sigle de PHP: Hypertext Preprocessor) est un langage de scripts libre.</p>
+       <p> Il est  principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP,
+        mais pouvant également fonctionner comme n'importe quel langage interpr&eacutet&eacute de façon locale, en ex&eacutecutant les programmes en ligne de commande.
+        On désigne parfois PHP comme une plate forme plus qu'un simple langage .
+	</p>
+<nav id="som" >    
+	<h1>SOMMAIRE</h1>
+      <span class="sommaire" id="somm" onclick="javascript:afficher_cacher('lien');"> Cacher/Afficher </span>
+         <div id="lien" class="lien">
+			<ol>
+	    <a href ="#Histo">			<li>Historique</a></li>
+	    <a href ="#CCM">			<li>Comment ça marche ?</a></li>
+        <a href ="#Logs">	        <li> Logiciels utilisant PHP</a> </li>
+				<ul>
+		<a href ="#Weblog">		<li>Systèmes de Gestion de Webblog</a></li>
+    	<a href ="#Portail">                <li> Portail (CMS)</a></li>
+    	<a href ="#BDD">                 <li> Administration Bases de données</a></li>
+      	<a href ="#Wiki">                <li> Wiki</a></li>
+     	<a href ="#Autres">                  <li> Autres</a></li>
+                   
+				</ul>
+	    <a href ="#LAMP">			<li> Plateforme LAMP</a></li>
+			</ol>
+ </nav>
+ </div>
+        <script type="text/javascript">
+         </script>
+</p>
+
+
+   <div id="Histo">  
+<h2>Historique</h2>    
+<p> PHP est né en tant que langage de script coté serveur inclu dans le HTML et c'est dans cette discipline qu'il excelle.
+
+PHP, signifiait à l'origine "Personal Home Pages", a été conçu durant l'automne 1994 par Rasmus Lerdorf. Il l'a conçu pour surveiller les personnes qui venaient consulter son CV en ligne. La première version est sortie au debut de l'année 1995, à ce moment Rasmus a pensé qu'en le distribuant sous licence Open Source, d'autres développeurs corrigeraient les bugs. La première version était trés simple et comprenait un parseur qui était capable de reconnaitre quelques macros et fournissait quelques outils utiles pour les pages Web.
+
+Le parseur a été récrit durant l'année 1995 et a été renommé PHP/FI version 2. "FI" signifie "Form Interpreter" (Interpréteur de formulaire) qui a été ajouté par Rasmus pour répondre au besoin grandissant des pages Web. Le support de la base de données mSQL a été ajouté à ce moment. PHP/FI est devenu populaire et des développeurs ont commencé à contribuer au développement en envoyant des morceaux de codes.
+</p>
+</div>
+
+<div id="CCM">  
+<h2>Comment ça marche ?</h2>    
+<p> PHP est un langage interprété (un langage de script) exécuté du côté serveur (comme les scripts CGI, ASP, ...) et non du côté client (un script écrit en Javascript ou une applet Java s'exécute sur votre ordinateur...). La syntaxe du langage provient de celles du langage C, du Perl et de Java. Ses principaux atouts sont :
+Une grande communauté de développeurs partageant des centaines de milliers d'exemples de script PHP ;
+La gratuité et la disponibilité du code source (PHP est distribué sous licence GNU GPL) ;
+La simplicité d'écriture de scripts ;
+La possibilité d'inclure le script PHP au sein d'une page HTML (contrairement aux scripts CGi, pour lesquels il faut écrire des lignes de code pour afficher chaque ligne en langage HTML) ;
+La simplicité d'interfaçage avec des bases de données (de nombreux SGBD sont supportés, mais le plus utilisé avec ce langage est MySQL, un SGBD gratuit disponible sur de nombreuses plateformes : Unix, Linux, Windows, MacOs X, Solaris, etc...) ;
+L'intégration au sein de nombreux serveurs web (Apache, Microsoft IIS, etc.).
+</p>
+</div>
+
+
+<div id="Logs">  
+<h2>Logiciels utilisant PHP</h2>  
+
+<div id="Weblog">
+<h3> Systèmes de gestion Weblog</h3>
+<p> PHP permet un interfaçage simple avec de nombreux systèmes de gestion de bases de données (SGBD), parmi lesquels :
+
+Adabas D,dBase,Empress, FilePro, Informix, Interbase, mSQL, MySQL, Oracle, PostgreSQL, Solid, Sybase, Velocis, Unix dbm</p>
+</div>
+
+<div id="Portail">
+<h3> Portail (CMS)</h3>
+<p> BLABLABLABLABAABLABLA </p>
+</div>
+
+<div id="BDD">
+<h3>Administration Bases de données</h3>
+<p> BLABLABLABLABAABLABLA </p>
+</div>
+
+<div id="Wiki">
+<h3>Wiki</h3>
+<p> BLABLABLABLABAABLABLA </p>
+</div>
+
+<div id="Autres">
+<h3> Autres</h3>
+<p> BLABLABLABLABAABLABLA </p>
+</div>
+
+</div>
+
+   <div id="LAMP">  
+<h2>Plateforme LAMP</h2>    
+<p>
+BLABLALALALALALALAL
+</p>
+</div>
+
+
+
+
+</div>
+
+
     
     </body>
  </meta>

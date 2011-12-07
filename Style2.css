@@ -1,0 +1,39 @@
+html, body 
+{
+  margin:0;
+  padding:0;
+  height:100%; /* 100 % en hauteur */
+  font-family: verdana, serif;
+  text-align: left; 
+    background-image: url("Back_two.jpg");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat;  /* Le fond ne sera pas répété */
+    opacity:0.75;
+  color: rgb(38,121,183);
+ 
+  
+}
+
+h1
+{    text-align: center; 
+     font-weight: bold;
+    border-left: 2px inset blue;
+    border-top : 2px inset blue;
+    border-right :2px inset blue;
+    border-bottom :2px inset blue;
+    color : white;
+}
+
+h2
+{
+    text-decoration : underline;
+    text-align: center; 
+    font-variant: small-caps;
+    color : white;
+    
+    }
+    
+ul
+{
+    list-style-type: square;
+}
